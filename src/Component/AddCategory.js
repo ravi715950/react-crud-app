@@ -50,11 +50,11 @@ const AddCategory = () => {
         </div>
       }
       {!isloading && <div>
-        <h1>add new category</h1>
+        <h1>add new item</h1>
         <form onSubmit={handleSubmit}>
           <input type="text" onChange={(e) => setCategory(e.target.value)} />
           <input type="file" onChange={(e) => {fileHandler(e)}} />
-          <button type="submit">add category</button>
+          <button type="submit">add item</button>
         </form>
         <br/>
         <img style={{width:'100px'}} src={imageUrl} />
